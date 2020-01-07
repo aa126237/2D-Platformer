@@ -97,5 +97,26 @@
   <ItemGroup>
     <None Include="Resources\Background.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JumpingLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JumpingRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunningLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RunningRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandingLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StandingRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -23,7 +23,7 @@ namespace Platformer
         {
             if(!pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
             {
-                pb_Player.Top += 10;
+                pb_Player.Top += 5;
             }
         }
         private void tmr_Up_Tick(object sender, EventArgs e)

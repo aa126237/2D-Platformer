@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tmr_Right = new System.Windows.Forms.Timer(this.components);
             this.tmr_Left = new System.Windows.Forms.Timer(this.components);
             this.tmr_Up = new System.Windows.Forms.Timer(this.components);
@@ -64,10 +63,11 @@
             // pb_Player
             // 
             this.pb_Player.BackColor = System.Drawing.Color.Transparent;
-            this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
-            this.pb_Player.Location = new System.Drawing.Point(159, 306);
+            this.pb_Player.Image = global::Platformer.Properties.Resources.RunningRight;
+            this.pb_Player.Location = new System.Drawing.Point(179, 167);
             this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(26, 23);
+            this.pb_Player.Size = new System.Drawing.Size(31, 44);
+            this.pb_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_Player.TabIndex = 1;
             this.pb_Player.TabStop = false;
             // 
