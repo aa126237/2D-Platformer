@@ -29,12 +29,82 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.pb_Ground = new System.Windows.Forms.PictureBox();
+            this.pb_Player = new System.Windows.Forms.PictureBox();
+            this.tmr_Right = new System.Windows.Forms.Timer(this.components);
+            this.tmr_Left = new System.Windows.Forms.Timer(this.components);
+            this.tmr_Up = new System.Windows.Forms.Timer(this.components);
+            this.tmr_Gravity = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pb_Ground
+            // 
+            this.pb_Ground.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Ground.Image = global::Platformer.Properties.Resources.Grass;
+            this.pb_Ground.Location = new System.Drawing.Point(-5, 402);
+            this.pb_Ground.Name = "pb_Ground";
+            this.pb_Ground.Size = new System.Drawing.Size(813, 53);
+            this.pb_Ground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_Ground.TabIndex = 0;
+            this.pb_Ground.TabStop = false;
+            // 
+            // pb_Player
+            // 
+            this.pb_Player.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
+            this.pb_Player.Location = new System.Drawing.Point(159, 306);
+            this.pb_Player.Name = "pb_Player";
+            this.pb_Player.Size = new System.Drawing.Size(26, 25);
+            this.pb_Player.TabIndex = 1;
+            this.pb_Player.TabStop = false;
+            // 
+            // tmr_Right
+            // 
+            this.tmr_Right.Interval = 10;
+            this.tmr_Right.Tick += new System.EventHandler(this.tmr_Right_Tick);
+            // 
+            // tmr_Left
+            // 
+            this.tmr_Left.Interval = 10;
+            this.tmr_Left.Tick += new System.EventHandler(this.tmr_Left_Tick);
+            // 
+            // tmr_Up
+            // 
+            this.tmr_Up.Interval = 10;
+            this.tmr_Up.Tick += new System.EventHandler(this.tmr_Up_Tick);
+            // 
+            // tmr_Gravity
+            // 
+            this.tmr_Gravity.Enabled = true;
+            this.tmr_Gravity.Interval = 10;
+            this.tmr_Gravity.Tick += new System.EventHandler(this.tmr_Gravity_Tick);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pb_Player);
+            this.Controls.Add(this.pb_Ground);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pb_Ground;
+        private System.Windows.Forms.PictureBox pb_Player;
+        private System.Windows.Forms.Timer tmr_Right;
+        private System.Windows.Forms.Timer tmr_Left;
+        private System.Windows.Forms.Timer tmr_Up;
+        private System.Windows.Forms.Timer tmr_Gravity;
     }
 }
 
