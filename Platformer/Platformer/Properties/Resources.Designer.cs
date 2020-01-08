@@ -73,6 +73,26 @@ namespace Platformer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DeadGhost {
+            get {
+                object obj = ResourceManager.GetObject("DeadGhost", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gem {
+            get {
+                object obj = ResourceManager.GetObject("gem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Grass {
             get {
                 object obj = ResourceManager.GetObject("Grass", resourceCulture);
@@ -96,6 +116,16 @@ namespace Platformer.Properties {
         internal static System.Drawing.Bitmap JumpingRight {
             get {
                 object obj = ResourceManager.GetObject("JumpingRight", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PileOfGold {
+            get {
+                object obj = ResourceManager.GetObject("PileOfGold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
