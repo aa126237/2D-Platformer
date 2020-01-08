@@ -19,31 +19,34 @@ namespace Platformer
         {
             InitializeComponent();
         }
+
         private void tmr_Gravity_Tick(object sender, EventArgs e)
         {
-            if(!pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
+            if (!pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
             {
                 pb_Player.Top += 5;
             }
         }
+
         private void tmr_Up_Tick(object sender, EventArgs e)
         {
-                pb_Player.Top -= 10;
-                playerJumping = true;
+            pb_Player.Top -= 5;
+            playerJumping = true;
         }
+
         private void tmr_Right_Tick(object sender, EventArgs e)
         {
-                pb_Player.Left += 10;
+            pb_Player.Left += 5;
         }
 
         private void tmr_Left_Tick(object sender, EventArgs e)
         {
-                pb_Player.Left -= 10;
+            pb_Player.Left -= 5;
         }
 
-        private void The_Form_KeyDown(object sender, KeyEventArgs e)
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up)
+            if(e.KeyCode == Keys.Up)
             {
                 tmr_Up.Start();
             }
@@ -57,7 +60,7 @@ namespace Platformer
             }
         }
 
-        private void The_Form_KeyUp(object sender, KeyEventArgs e)
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
             {
@@ -72,6 +75,6 @@ namespace Platformer
             {
                 tmr_Left.Stop();
             }
-        }      
+        }
     }
 }
