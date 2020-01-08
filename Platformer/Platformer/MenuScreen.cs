@@ -19,7 +19,9 @@ namespace Platformer
 
         private void btn_loadGame_Click(object sender, EventArgs e)
         {
-
+            Form1 level1 = new Form1();
+            level1.Show();
+            this.Visible = false;
         }
     }
 }
