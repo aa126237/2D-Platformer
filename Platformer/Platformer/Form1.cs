@@ -88,7 +88,9 @@ namespace Platformer
 
         private void TestButton_Click(object sender, EventArgs e)
         {
-
+            MenuScreen menu = new MenuScreen();
+            menu.Show();
+            this.Visible = false;
         }
     }
 }
