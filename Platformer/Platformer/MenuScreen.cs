@@ -31,7 +31,7 @@ namespace Platformer
 
         private void btn_exitGame_Click(object sender, EventArgs e) // Exit Button
         {
-
+            Console.WriteLine("Hi");
         }
 
         private void btn_Options_Click(object sender, EventArgs e)
