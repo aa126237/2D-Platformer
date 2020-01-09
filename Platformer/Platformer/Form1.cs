@@ -86,11 +86,9 @@ namespace Platformer
             }
         }
 
-        private void TestButton_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            MenuScreen menu = new MenuScreen();
-            menu.Show();
-            this.Visible = false;
+
         }
     }
 }
