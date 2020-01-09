@@ -37,7 +37,6 @@
             this.tmr_Left = new System.Windows.Forms.Timer(this.components);
             this.pb_rightWall = new System.Windows.Forms.PictureBox();
             this.pb_leftWall = new System.Windows.Forms.PictureBox();
-            this.TestButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_rightWall)).BeginInit();
@@ -105,16 +104,6 @@
             this.pb_leftWall.TabIndex = 3;
             this.pb_leftWall.TabStop = false;
             // 
-            // TestButton
-            // 
-            this.TestButton.Location = new System.Drawing.Point(450, 61);
-            this.TestButton.Name = "TestButton";
-            this.TestButton.Size = new System.Drawing.Size(75, 23);
-            this.TestButton.TabIndex = 4;
-            this.TestButton.Text = "Test";
-            this.TestButton.UseVisualStyleBackColor = true;
-            this.TestButton.Click += new System.EventHandler(this.TestButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,13 +112,13 @@
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.TestButton);
             this.Controls.Add(this.pb_leftWall);
             this.Controls.Add(this.pb_rightWall);
             this.Controls.Add(this.pb_Player);
             this.Controls.Add(this.pb_Ground);
             this.Name = "Form1";
             this.Text = "Level 1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
@@ -150,7 +139,6 @@
         private System.Windows.Forms.Timer tmr_Left;
         private System.Windows.Forms.PictureBox pb_rightWall;
         private System.Windows.Forms.PictureBox pb_leftWall;
-        private System.Windows.Forms.Button TestButton;
     }
 }
 
