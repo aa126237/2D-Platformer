@@ -88,14 +88,7 @@ namespace Platformer
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int firstLoad = 0;
-            if(firstLoad == 0)
-            {
-                firstLoad ++;
-                MenuScreen menu = new MenuScreen();
-                menu.Show();
-                this.Visible = false;
-            }
+
         }
     }
 }
