@@ -17,11 +17,26 @@ namespace Platformer
             InitializeComponent();
         }
 
-        private void btn_loadGame_Click(object sender, EventArgs e)
+        private void MenuScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_startGame_Click(object sender, EventArgs e) // Start Button
         {
             Form1 level1 = new Form1();
             level1.Show();
             this.Visible = false;
+        }
+
+        private void btn_exitGame_Click(object sender, EventArgs e) // Exit Button
+        {
+
+        }
+
+        private void btn_Options_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
