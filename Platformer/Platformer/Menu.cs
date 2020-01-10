@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Platformer
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
 
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -25,9 +25,10 @@ namespace Platformer
 
         private void btn_startGame_Click(object sender, EventArgs e)
         {
-            MenuScreen level1 = new MenuScreen();
-            level1.Show();
+            LevelSelect levelSelect = new LevelSelect();
+            levelSelect.Show();
             this.Visible = false;
+
         }
 
         private void btn_Options_Click(object sender, EventArgs e)

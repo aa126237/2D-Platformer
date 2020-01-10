@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Platformer
 {
-    public partial class MenuScreen : Form
+    public partial class Level4 : Form
     {
 
         bool playerJumping = false;
 
-        public MenuScreen()
+        public Level4()
         {
             InitializeComponent();
-        }
-
-        private void MenuScreen_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void tmr_Gravity_Tick(object sender, EventArgs e)
@@ -58,7 +53,7 @@ namespace Platformer
             }
         }
 
-        private void MenuScreen_KeyDown(object sender, KeyEventArgs e)
+        private void Level4_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
             {
@@ -74,7 +69,7 @@ namespace Platformer
             }
         }
 
-        private void MenuScreen_KeyUp(object sender, KeyEventArgs e)
+        private void Level4_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Up)
             {
