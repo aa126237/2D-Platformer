@@ -1,6 +1,6 @@
 ﻿namespace Platformer
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -89,8 +89,9 @@
             this.Controls.Add(this.btn_exitGame);
             this.Controls.Add(this.btn_Options);
             this.Controls.Add(this.btn_startGame);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Level 1";
+            this.Text = "Menu Screen";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
