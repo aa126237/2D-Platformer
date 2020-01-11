@@ -32,16 +32,18 @@
             this.pb_Ground = new System.Windows.Forms.PictureBox();
             this.pb_Player = new System.Windows.Forms.PictureBox();
             this.tmr_movement = new System.Windows.Forms.Timer(this.components);
-            this.pb_platform1 = new System.Windows.Forms.PictureBox();
             this.pb_platform4 = new System.Windows.Forms.PictureBox();
             this.pb_platform3 = new System.Windows.Forms.PictureBox();
             this.pb_platform2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb_platform5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_platform1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_platform5)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_Ground
@@ -60,7 +62,7 @@
             // 
             this.pb_Player.BackColor = System.Drawing.Color.Transparent;
             this.pb_Player.Image = global::Platformer.Properties.Resources.RunningRight;
-            this.pb_Player.Location = new System.Drawing.Point(367, 134);
+            this.pb_Player.Location = new System.Drawing.Point(413, 362);
             this.pb_Player.Name = "pb_Player";
             this.pb_Player.Size = new System.Drawing.Size(31, 44);
             this.pb_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,24 +75,12 @@
             this.tmr_movement.Interval = 20;
             this.tmr_movement.Tick += new System.EventHandler(this.tmr_movement_Tick);
             // 
-            // pb_platform1
-            // 
-            this.pb_platform1.BackColor = System.Drawing.Color.Transparent;
-            this.pb_platform1.BackgroundImage = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform1.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform1.Location = new System.Drawing.Point(588, 357);
-            this.pb_platform1.Name = "pb_platform1";
-            this.pb_platform1.Size = new System.Drawing.Size(200, 30);
-            this.pb_platform1.TabIndex = 17;
-            this.pb_platform1.TabStop = false;
-            this.pb_platform1.Tag = "platform";
-            // 
             // pb_platform4
             // 
             this.pb_platform4.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform4.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform4.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform4.Location = new System.Drawing.Point(161, 120);
+            this.pb_platform4.Location = new System.Drawing.Point(161, 158);
             this.pb_platform4.Name = "pb_platform4";
             this.pb_platform4.Size = new System.Drawing.Size(200, 30);
             this.pb_platform4.TabIndex = 18;
@@ -102,7 +92,7 @@
             this.pb_platform3.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform3.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform3.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform3.Location = new System.Drawing.Point(524, 190);
+            this.pb_platform3.Location = new System.Drawing.Point(485, 158);
             this.pb_platform3.Name = "pb_platform3";
             this.pb_platform3.Size = new System.Drawing.Size(200, 30);
             this.pb_platform3.TabIndex = 19;
@@ -121,6 +111,30 @@
             this.pb_platform2.TabStop = false;
             this.pb_platform2.Tag = "platform";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox1.Image = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox1.Location = new System.Drawing.Point(565, 297);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 30);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "platform";
+            // 
+            // pb_platform5
+            // 
+            this.pb_platform5.BackColor = System.Drawing.Color.Transparent;
+            this.pb_platform5.BackgroundImage = global::Platformer.Properties.Resources.Grass;
+            this.pb_platform5.Image = global::Platformer.Properties.Resources.Grass;
+            this.pb_platform5.Location = new System.Drawing.Point(316, 62);
+            this.pb_platform5.Name = "pb_platform5";
+            this.pb_platform5.Size = new System.Drawing.Size(200, 30);
+            this.pb_platform5.TabIndex = 21;
+            this.pb_platform5.TabStop = false;
+            this.pb_platform5.Tag = "platform";
+            // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,25 +142,28 @@
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_platform5);
             this.Controls.Add(this.pb_platform2);
             this.Controls.Add(this.pb_platform3);
             this.Controls.Add(this.pb_platform4);
-            this.Controls.Add(this.pb_platform1);
             this.Controls.Add(this.pb_Player);
             this.Controls.Add(this.pb_Ground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Level1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level 1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Level1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Level1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_platform1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_platform5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -156,9 +173,10 @@
         private System.Windows.Forms.PictureBox pb_Ground;
         private System.Windows.Forms.PictureBox pb_Player;
         private System.Windows.Forms.Timer tmr_movement;
-        private System.Windows.Forms.PictureBox pb_platform1;
         private System.Windows.Forms.PictureBox pb_platform4;
         private System.Windows.Forms.PictureBox pb_platform3;
         private System.Windows.Forms.PictureBox pb_platform2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pb_platform5;
     }
 }
