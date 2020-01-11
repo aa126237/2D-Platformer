@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Level4.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,14 +81,11 @@
     <Compile Include="LevelSelect.Designer.cs">
       <DependentUpon>LevelSelect.cs</DependentUpon>
     </Compile>
-    <Compile Include="Level1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Level1.Designer.cs">
-      <DependentUpon>Level1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Level2.resx">
       <DependentUpon>Level2.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,9 +100,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LevelSelect.resx">
       <DependentUpon>LevelSelect.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Level1.resx">
-      <DependentUpon>Level1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
