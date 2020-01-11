@@ -37,6 +37,8 @@
             this.pb_platform2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pb_platform5 = new System.Windows.Forms.PictureBox();
+            this.gemLabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform4)).BeginInit();
@@ -44,6 +46,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_Ground
@@ -135,6 +138,33 @@
             this.pb_platform5.TabStop = false;
             this.pb_platform5.Tag = "platform";
             // 
+            // gemLabel
+            // 
+            this.gemLabel.AutoSize = true;
+            this.gemLabel.BackColor = System.Drawing.Color.Transparent;
+            this.gemLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gemLabel.Location = new System.Drawing.Point(36, 9);
+            this.gemLabel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.gemLabel.Name = "gemLabel";
+            this.gemLabel.Size = new System.Drawing.Size(91, 31);
+            this.gemLabel.TabIndex = 23;
+            this.gemLabel.Text = "Score:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::Platformer.Properties.Resources.gem;
+            this.pictureBox2.Location = new System.Drawing.Point(9, 9);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(27, 31);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            // 
             // Level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,6 +172,8 @@
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.gemLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pb_platform5);
             this.Controls.Add(this.pb_platform2);
@@ -164,7 +196,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -178,5 +212,7 @@
         private System.Windows.Forms.PictureBox pb_platform2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pb_platform5;
+        private System.Windows.Forms.Label gemLabel;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
