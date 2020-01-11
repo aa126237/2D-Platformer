@@ -76,7 +76,7 @@
             // 
             this.pb_Player.BackColor = System.Drawing.Color.Transparent;
             this.pb_Player.Image = global::Platformer.Properties.Resources.RunningRight;
-            this.pb_Player.Location = new System.Drawing.Point(498, 128);
+            this.pb_Player.Location = new System.Drawing.Point(687, 124);
             this.pb_Player.Name = "pb_Player";
             this.pb_Player.Size = new System.Drawing.Size(31, 44);
             this.pb_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,8 +115,10 @@
             this.Controls.Add(this.pb_leftWall);
             this.Controls.Add(this.pb_rightWall);
             this.Controls.Add(this.pb_Ground);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Level4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level 4";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Level4_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Level4_KeyUp);

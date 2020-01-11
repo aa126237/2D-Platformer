@@ -115,8 +115,10 @@
             this.Controls.Add(this.pb_leftWall);
             this.Controls.Add(this.pb_Ground);
             this.Controls.Add(this.pb_rightWall);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Level2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level 2";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Level2_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Level2_KeyUp);

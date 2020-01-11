@@ -105,8 +105,10 @@
             this.Controls.Add(this.btn_level3);
             this.Controls.Add(this.btn_level2);
             this.Controls.Add(this.btn_level1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "LevelSelect";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level Select";
             this.ResumeLayout(false);
 

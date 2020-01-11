@@ -115,8 +115,10 @@
             this.Controls.Add(this.pb_rightWall);
             this.Controls.Add(this.pb_Player);
             this.Controls.Add(this.pb_Ground);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Level1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level 1";
             this.Load += new System.EventHandler(this.MenuScreen_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MenuScreen_KeyDown);
