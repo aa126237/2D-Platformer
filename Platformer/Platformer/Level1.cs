@@ -13,81 +13,95 @@ namespace Platformer
     public partial class Level1 : Form
     {
 
+        bool movingLeft = false;
+        bool movingRight = false;
         bool playerJumping = false;
+
+        int playerJumpSpeed = 10;
+        int force = 8;
+        int score = 0;
 
         public Level1()
         {
             InitializeComponent();
         }
 
-        private void MenuScreen_Load(object sender, EventArgs e)
+        private void Level1_KeyDown(object sender, KeyEventArgs e)
         {
-
-        }
-
-        private void tmr_Gravity_Tick(object sender, EventArgs e)
-        {
-            if (!pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
+            if(e.KeyCode == Keys.Left)
             {
-                pb_Player.Top += 5;
+                movingLeft = true;
             }
-        }
 
-        private void tmr_Up_Tick(object sender, EventArgs e)
-        {
-            if (pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
+            if(e.KeyCode == Keys.Right)
             {
-                pb_Player.Top -= 50;
+                movingRight = true;
+            }
+
+            if(e.KeyCode == Keys.Space && !playerJumping)
+            {
                 playerJumping = true;
             }
         }
 
-        private void tmr_Right_Tick(object sender, EventArgs e)
+        private void Level1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (!pb_Player.Bounds.IntersectsWith(pb_rightWall.Bounds))
+            if(e.KeyCode == Keys.Left)
             {
-                pb_Player.Left += 5;
+                movingLeft = false;
+            }
+
+            if(e.KeyCode == Keys.Right)
+            {
+                movingRight = false;
+            }
+
+            if(playerJumping)
+            {
+                playerJumping = false;
             }
         }
 
-        private void tmr_Left_Tick(object sender, EventArgs e)
+        private void tmr_movement_Tick(object sender, EventArgs e)
         {
-            if (!pb_Player.Bounds.IntersectsWith(pb_leftWall.Bounds))
+            pb_Player.Top += playerJumpSpeed;
+
+            if(playerJumping && force < 0)
+            {
+                playerJumping = false;
+            }
+
+            if(movingLeft)
             {
                 pb_Player.Left -= 5;
             }
-        }
 
-        private void MenuScreen_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Up)
+            if(movingRight)
             {
-                tmr_Up.Start();
+                pb_Player.Left += 5;
             }
-            else if (e.KeyCode == Keys.Right)
-            {
-                tmr_Right.Start();
-            }
-            else if (e.KeyCode == Keys.Left)
-            {
-                tmr_Left.Start();
-            }
-        }
 
-        private void MenuScreen_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Up)
+            if(playerJumping)
             {
-                tmr_Up.Stop();
-                playerJumping = false;
+                playerJumpSpeed = -12;
+                force -= 1;
             }
-            else if (e.KeyCode == Keys.Right)
+
+            else
             {
-                tmr_Right.Stop();
+                playerJumpSpeed = 12;
             }
-            else if (e.KeyCode == Keys.Left)
+
+            foreach(Control x in this.Controls)
             {
-                tmr_Left.Stop();
+                if(x is PictureBox && x.Tag == "platform")
+                {
+                    if(pb_Player.Bounds.IntersectsWith(x.Bounds) && !playerJumping)
+                    {
+                        force = 8;
+                        pb_Player.Top = x.Top - pb_Player.Height;
+                    }
+                }
             }
         }
     }

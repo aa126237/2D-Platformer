@@ -13,76 +13,95 @@ namespace Platformer
     public partial class Level3 : Form
     {
 
+        bool movingLeft = false;
+        bool movingRight = false;
         bool playerJumping = false;
+
+        int playerJumpSpeed = 10;
+        int force = 8;
+        int score = 0;
 
         public Level3()
         {
             InitializeComponent();
         }
 
-        private void tmr_Gravity_Tick(object sender, EventArgs e)
-        {
-            if (!pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
-            {
-                pb_Player.Top += 5;
-            }
-        }
-
-        private void tmr_Up_Tick(object sender, EventArgs e)
-        {
-            if (pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && playerJumping == false)
-            {
-                pb_Player.Top -= 50;
-                playerJumping = true;
-            }
-        }
-
-        private void tmr_Right_Tick(object sender, EventArgs e)
-        {
-            if (!pb_Player.Bounds.IntersectsWith(pb_rightWall.Bounds))
-            {
-                pb_Player.Left += 5;
-            }
-        }
-
-        private void tmr_Left_Tick(object sender, EventArgs e)
-        {
-            if (!pb_Player.Bounds.IntersectsWith(pb_leftWall.Bounds))
-            {
-                pb_Player.Left -= 5;
-            }
-        }
-
         private void Level3_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.Left)
             {
-                tmr_Up.Start();
+                movingLeft = true;
             }
-            else if (e.KeyCode == Keys.Right)
+
+            if (e.KeyCode == Keys.Right)
             {
-                tmr_Right.Start();
+                movingRight = true;
             }
-            else if (e.KeyCode == Keys.Left)
+
+            if (e.KeyCode == Keys.Space && !playerJumping)
             {
-                tmr_Left.Start();
+                playerJumping = true;
             }
         }
 
         private void Level3_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.Left)
             {
-                tmr_Up.Stop();
+                movingLeft = false;
+            }
+
+            if (e.KeyCode == Keys.Right)
+            {
+                movingRight = false;
+            }
+
+            if (playerJumping)
+            {
                 playerJumping = false;
             }
-            else if (e.KeyCode == Keys.Right)
+        }
+
+        private void tmr_movement_Tick(object sender, EventArgs e)
+        {
+            pb_Player.Top += playerJumpSpeed;
+
+            if (playerJumping && force < 0)
             {
-                tmr_Right.Stop();
+                playerJumping = false;
             }
-            else if (e.KeyCode == Keys.Left)
+
+            if (movingLeft)
             {
-                tmr_Left.Stop();
+                pb_Player.Left -= 5;
+            }
+
+            if (movingRight)
+            {
+                pb_Player.Left += 5;
+            }
+
+            if (playerJumping)
+            {
+                playerJumpSpeed = -12;
+                force -= 1;
+            }
+
+            else
+            {
+                playerJumpSpeed = 12;
+            }
+
+            foreach (Control x in this.Controls)
+            {
+                if (x is PictureBox && x.Tag == "platform")
+                {
+                    if (pb_Player.Bounds.IntersectsWith(x.Bounds) && !playerJumping)
+                    {
+                        force = 8;
+                        pb_Player.Top = x.Top - pb_Player.Height;
+                    }
+                }
             }
         }
     }
