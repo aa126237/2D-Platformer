@@ -102,7 +102,18 @@ namespace Platformer
                         pb_Player.Top = x.Top - pb_Player.Height;
                     }
                 }
+
+                if (x is PictureBox && x.Tag == "gem")
+                {
+                    if (pb_Player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        this.Controls.Remove(x);
+                        score++;
+                    }
+                }
             }
+
+            gemLabel.Text = "Score: " + score;
         }
     }
 }

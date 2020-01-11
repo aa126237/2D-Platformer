@@ -28,17 +28,17 @@ namespace Platformer
 
         private void Level1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left)
             {
                 movingLeft = true;
             }
 
-            if(e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right)
             {
                 movingRight = true;
             }
 
-            if(e.KeyCode == Keys.Space && !playerJumping)
+            if (e.KeyCode == Keys.Space && !playerJumping)
             {
                 playerJumping = true;
             }
@@ -46,17 +46,17 @@ namespace Platformer
 
         private void Level1_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left)
             {
                 movingLeft = false;
             }
 
-            if(e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right)
             {
                 movingRight = false;
             }
 
-            if(playerJumping)
+            if (playerJumping)
             {
                 playerJumping = false;
             }
@@ -66,22 +66,22 @@ namespace Platformer
         {
             pb_Player.Top += playerJumpSpeed;
 
-            if(playerJumping && force < 0)
+            if (playerJumping && force < 0)
             {
                 playerJumping = false;
             }
 
-            if(movingLeft)
+            if (movingLeft)
             {
                 pb_Player.Left -= 5;
             }
 
-            if(movingRight)
+            if (movingRight)
             {
                 pb_Player.Left += 5;
             }
 
-            if(playerJumping)
+            if (playerJumping)
             {
                 playerJumpSpeed = -12;
                 force -= 1;
@@ -92,17 +92,28 @@ namespace Platformer
                 playerJumpSpeed = 12;
             }
 
-            foreach(Control x in this.Controls)
+            foreach (Control x in this.Controls)
             {
-                if(x is PictureBox && x.Tag == "platform")
+                if (x is PictureBox && x.Tag == "platform")
                 {
-                    if(pb_Player.Bounds.IntersectsWith(x.Bounds) && !playerJumping)
+                    if (pb_Player.Bounds.IntersectsWith(x.Bounds) && !playerJumping)
                     {
                         force = 8;
                         pb_Player.Top = x.Top - pb_Player.Height;
                     }
                 }
+
+                if (x is PictureBox && x.Tag == "gem")
+                {
+                    if (pb_Player.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        this.Controls.Remove(x);
+                        score++;
+                    }
+                }
             }
+
+            gemLabel.Text = "Score: " + score;
         }
     }
 }
