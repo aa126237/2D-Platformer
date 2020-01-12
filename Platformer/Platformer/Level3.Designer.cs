@@ -44,6 +44,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.gemLabel = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pb_settings = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform1)).BeginInit();
@@ -57,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_settings)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_Ground
@@ -64,9 +66,9 @@
             this.pb_Ground.BackColor = System.Drawing.Color.Transparent;
             this.pb_Ground.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_Ground.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_Ground.Location = new System.Drawing.Point(-6, 425);
+            this.pb_Ground.Location = new System.Drawing.Point(-8, 434);
             this.pb_Ground.Name = "pb_Ground";
-            this.pb_Ground.Size = new System.Drawing.Size(813, 30);
+            this.pb_Ground.Size = new System.Drawing.Size(845, 30);
             this.pb_Ground.TabIndex = 14;
             this.pb_Ground.TabStop = false;
             this.pb_Ground.Tag = "platform";
@@ -235,13 +237,27 @@
             this.pictureBox5.TabIndex = 36;
             this.pictureBox5.TabStop = false;
             // 
+            // pb_settings
+            // 
+            this.pb_settings.BackColor = System.Drawing.Color.Transparent;
+            this.pb_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_settings.Image = global::Platformer.Properties.Resources.cog_gear_monotone_settings_icon;
+            this.pb_settings.Location = new System.Drawing.Point(772, 12);
+            this.pb_settings.Name = "pb_settings";
+            this.pb_settings.Size = new System.Drawing.Size(50, 50);
+            this.pb_settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_settings.TabIndex = 37;
+            this.pb_settings.TabStop = false;
+            this.pb_settings.Click += new System.EventHandler(this.pb_settings_Click);
+            // 
             // Level3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 461);
+            this.Controls.Add(this.pb_settings);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.gemLabel);
             this.Controls.Add(this.pictureBox4);
@@ -277,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_settings)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,5 +316,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label gemLabel;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pb_settings;
     }
 }

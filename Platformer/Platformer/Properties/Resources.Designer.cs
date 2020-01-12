@@ -73,6 +73,16 @@ namespace Platformer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cog_gear_monotone_settings_icon {
+            get {
+                object obj = ResourceManager.GetObject("cog_gear_monotone_settings_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DeadGhost {
             get {
                 object obj = ResourceManager.GetObject("DeadGhost", resourceCulture);

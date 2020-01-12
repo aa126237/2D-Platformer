@@ -124,5 +124,11 @@ namespace Platformer
                 this.Visible = false;
             }
         }
+
+        private void pb_settings_Click(object sender, EventArgs e)
+        {
+            PauseMenu pauseMenu = new PauseMenu();
+            pauseMenu.Show();
+        }
     }
 }
