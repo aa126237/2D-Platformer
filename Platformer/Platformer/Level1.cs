@@ -29,17 +29,19 @@ namespace Platformer
 
         private void Level1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 movingLeft = true;
+                pb_Player.Image = Properties.Resources.RunningLeft;
             }
 
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 movingRight = true;
+                pb_Player.Image = Properties.Resources.RunningRight;
             }
 
-            if (e.KeyCode == Keys.Space && !playerJumping)
+            if ((e.KeyCode == Keys.Space || e.KeyCode == Keys.W || e.KeyCode == Keys.Up) && !playerJumping)
             {
                 playerJumping = true;
             }
@@ -47,14 +49,16 @@ namespace Platformer
 
         private void Level1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
             {
                 movingLeft = false;
+                pb_Player.Image = Properties.Resources.StandingLeft;
             }
 
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 movingRight = false;
+                pb_Player.Image = Properties.Resources.StandingRight;
             }
 
             if (playerJumping)
