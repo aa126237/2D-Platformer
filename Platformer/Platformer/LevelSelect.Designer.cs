@@ -41,10 +41,10 @@
             this.btn_level1.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_level1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_level1.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_level1.Location = new System.Drawing.Point(280, 108);
+            this.btn_level1.Location = new System.Drawing.Point(485, 108);
             this.btn_level1.Margin = new System.Windows.Forms.Padding(0);
             this.btn_level1.Name = "btn_level1";
-            this.btn_level1.Size = new System.Drawing.Size(232, 53);
+            this.btn_level1.Size = new System.Drawing.Size(230, 53);
             this.btn_level1.TabIndex = 9;
             this.btn_level1.Text = "Level 1";
             this.btn_level1.UseVisualStyleBackColor = false;
@@ -56,7 +56,7 @@
             this.btn_level2.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_level2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_level2.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_level2.Location = new System.Drawing.Point(280, 171);
+            this.btn_level2.Location = new System.Drawing.Point(485, 171);
             this.btn_level2.Margin = new System.Windows.Forms.Padding(0);
             this.btn_level2.Name = "btn_level2";
             this.btn_level2.Size = new System.Drawing.Size(232, 53);
@@ -71,7 +71,7 @@
             this.btn_level3.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_level3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_level3.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_level3.Location = new System.Drawing.Point(280, 230);
+            this.btn_level3.Location = new System.Drawing.Point(485, 230);
             this.btn_level3.Margin = new System.Windows.Forms.Padding(0);
             this.btn_level3.Name = "btn_level3";
             this.btn_level3.Size = new System.Drawing.Size(232, 53);
@@ -86,7 +86,7 @@
             this.btn_level4.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_level4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_level4.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_level4.Location = new System.Drawing.Point(280, 292);
+            this.btn_level4.Location = new System.Drawing.Point(485, 292);
             this.btn_level4.Margin = new System.Windows.Forms.Padding(0);
             this.btn_level4.Name = "btn_level4";
             this.btn_level4.Size = new System.Drawing.Size(232, 53);
@@ -101,7 +101,7 @@
             this.btn_menu.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_menu.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_menu.Location = new System.Drawing.Point(261, 31);
+            this.btn_menu.Location = new System.Drawing.Point(465, 31);
             this.btn_menu.Margin = new System.Windows.Forms.Padding(0);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(270, 55);
@@ -116,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.btn_level4);
             this.Controls.Add(this.btn_level3);
@@ -124,6 +124,7 @@
             this.Controls.Add(this.btn_level1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "LevelSelect";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level Select";

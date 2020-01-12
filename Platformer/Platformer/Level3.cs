@@ -19,7 +19,8 @@ namespace Platformer
 
         int playerJumpSpeed = 10;
         int force = 8;
-        int score = 0;
+        int gemsCollected = 0;
+        int gemsLeft = 5;
 
         public Level3()
         {
@@ -108,14 +109,15 @@ namespace Platformer
                     if (pb_Player.Bounds.IntersectsWith(x.Bounds))
                     {
                         this.Controls.Remove(x);
-                        score++;
+                        gemsCollected++;
+                        gemsLeft--;
                     }
                 }
             }
 
-            gemLabel.Text = "Score: " + score;
+            gemLabel.Text = "Collect " + gemsLeft + " more gems";
 
-            if (score == 5)
+            if (gemsCollected == 5)
             {
                 tmr_movement.Stop();
                 MessageBox.Show("Congratulations you beat level 3!");

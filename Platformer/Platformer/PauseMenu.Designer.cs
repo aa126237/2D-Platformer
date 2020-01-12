@@ -39,7 +39,7 @@
             this.btn_continue.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_continue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_continue.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_continue.Location = new System.Drawing.Point(280, 108);
+            this.btn_continue.Location = new System.Drawing.Point(465, 108);
             this.btn_continue.Margin = new System.Windows.Forms.Padding(0);
             this.btn_continue.Name = "btn_continue";
             this.btn_continue.Size = new System.Drawing.Size(270, 55);
@@ -54,7 +54,7 @@
             this.btn_levelSelect.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_levelSelect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_levelSelect.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_levelSelect.Location = new System.Drawing.Point(280, 176);
+            this.btn_levelSelect.Location = new System.Drawing.Point(465, 176);
             this.btn_levelSelect.Margin = new System.Windows.Forms.Padding(0);
             this.btn_levelSelect.Name = "btn_levelSelect";
             this.btn_levelSelect.Size = new System.Drawing.Size(270, 55);
@@ -69,7 +69,7 @@
             this.btn_menu.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_menu.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_menu.Location = new System.Drawing.Point(280, 243);
+            this.btn_menu.Location = new System.Drawing.Point(465, 243);
             this.btn_menu.Margin = new System.Windows.Forms.Padding(0);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(270, 55);
@@ -84,7 +84,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(834, 461);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.btn_levelSelect);
             this.Controls.Add(this.btn_continue);

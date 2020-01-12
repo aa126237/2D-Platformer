@@ -74,7 +74,7 @@
             this.pb_Ground.Image = global::Platformer.Properties.Resources.Grass;
             this.pb_Ground.Location = new System.Drawing.Point(-8, 434);
             this.pb_Ground.Name = "pb_Ground";
-            this.pb_Ground.Size = new System.Drawing.Size(845, 30);
+            this.pb_Ground.Size = new System.Drawing.Size(1460, 30);
             this.pb_Ground.TabIndex = 14;
             this.pb_Ground.TabStop = false;
             this.pb_Ground.Tag = "platform";
@@ -145,7 +145,7 @@
             this.pb_Player.Image = global::Platformer.Properties.Resources.RunningRight;
             this.pb_Player.Location = new System.Drawing.Point(405, 375);
             this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(31, 44);
+            this.pb_Player.Size = new System.Drawing.Size(30, 45);
             this.pb_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb_Player.TabIndex = 27;
             this.pb_Player.TabStop = false;
@@ -242,7 +242,7 @@
             this.pb_settings.BackColor = System.Drawing.Color.Transparent;
             this.pb_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pb_settings.Image = global::Platformer.Properties.Resources.cog_gear_monotone_settings_icon;
-            this.pb_settings.Location = new System.Drawing.Point(772, 12);
+            this.pb_settings.Location = new System.Drawing.Point(1122, 12);
             this.pb_settings.Name = "pb_settings";
             this.pb_settings.Size = new System.Drawing.Size(50, 50);
             this.pb_settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,7 +256,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(834, 461);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.pb_settings);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.gemLabel);
