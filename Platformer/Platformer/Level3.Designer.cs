@@ -35,7 +35,6 @@
             this.pb_platform4 = new System.Windows.Forms.PictureBox();
             this.pb_platform3 = new System.Windows.Forms.PictureBox();
             this.pb_platform5 = new System.Windows.Forms.PictureBox();
-            this.pb_Player = new System.Windows.Forms.PictureBox();
             this.tmr_movement = new System.Windows.Forms.Timer(this.components);
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,13 +44,13 @@
             this.gemLabel = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pb_settings = new System.Windows.Forms.PictureBox();
+            this.pb_Player = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -59,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_settings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_Ground
@@ -68,7 +68,7 @@
             this.pb_Ground.Image = global::Platformer.Properties.Resources.Grass;
             this.pb_Ground.Location = new System.Drawing.Point(-8, 434);
             this.pb_Ground.Name = "pb_Ground";
-            this.pb_Ground.Size = new System.Drawing.Size(845, 30);
+            this.pb_Ground.Size = new System.Drawing.Size(1460, 30);
             this.pb_Ground.TabIndex = 14;
             this.pb_Ground.TabStop = false;
             this.pb_Ground.Tag = "platform";
@@ -132,17 +132,6 @@
             this.pb_platform5.TabIndex = 26;
             this.pb_platform5.TabStop = false;
             this.pb_platform5.Tag = "platform";
-            // 
-            // pb_Player
-            // 
-            this.pb_Player.BackColor = System.Drawing.Color.Transparent;
-            this.pb_Player.Image = global::Platformer.Properties.Resources.RunningRight;
-            this.pb_Player.Location = new System.Drawing.Point(194, 375);
-            this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(31, 44);
-            this.pb_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_Player.TabIndex = 27;
-            this.pb_Player.TabStop = false;
             // 
             // tmr_movement
             // 
@@ -219,9 +208,9 @@
             this.gemLabel.Location = new System.Drawing.Point(36, 9);
             this.gemLabel.Margin = new System.Windows.Forms.Padding(0);
             this.gemLabel.Name = "gemLabel";
-            this.gemLabel.Size = new System.Drawing.Size(91, 31);
+            this.gemLabel.Size = new System.Drawing.Size(256, 31);
             this.gemLabel.TabIndex = 35;
-            this.gemLabel.Text = "Score:";
+            this.gemLabel.Text = "Collect 5 more gems";
             // 
             // pictureBox5
             // 
@@ -242,7 +231,7 @@
             this.pb_settings.BackColor = System.Drawing.Color.Transparent;
             this.pb_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pb_settings.Image = global::Platformer.Properties.Resources.cog_gear_monotone_settings_icon;
-            this.pb_settings.Location = new System.Drawing.Point(772, 12);
+            this.pb_settings.Location = new System.Drawing.Point(1122, 12);
             this.pb_settings.Name = "pb_settings";
             this.pb_settings.Size = new System.Drawing.Size(50, 50);
             this.pb_settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -250,13 +239,24 @@
             this.pb_settings.TabStop = false;
             this.pb_settings.Click += new System.EventHandler(this.pb_settings_Click);
             // 
+            // pb_Player
+            // 
+            this.pb_Player.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Player.Image = global::Platformer.Properties.Resources.RunningRight;
+            this.pb_Player.Location = new System.Drawing.Point(194, 375);
+            this.pb_Player.Name = "pb_Player";
+            this.pb_Player.Size = new System.Drawing.Size(30, 45);
+            this.pb_Player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Player.TabIndex = 27;
+            this.pb_Player.TabStop = false;
+            // 
             // Level3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(834, 461);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.pb_settings);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.gemLabel);
@@ -286,7 +286,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -294,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_settings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +307,6 @@
         private System.Windows.Forms.PictureBox pb_platform4;
         private System.Windows.Forms.PictureBox pb_platform3;
         private System.Windows.Forms.PictureBox pb_platform5;
-        private System.Windows.Forms.PictureBox pb_Player;
         private System.Windows.Forms.Timer tmr_movement;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -317,5 +316,6 @@
         private System.Windows.Forms.Label gemLabel;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pb_settings;
+        private System.Windows.Forms.PictureBox pb_Player;
     }
 }
