@@ -44,5 +44,12 @@ namespace Platformer
             level4.Show();
             this.Visible = false;
         }
+
+        private void btn_menu_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }

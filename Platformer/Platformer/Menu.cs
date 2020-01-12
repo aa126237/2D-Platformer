@@ -28,7 +28,6 @@ namespace Platformer
             LevelSelect levelSelect = new LevelSelect();
             levelSelect.Show();
             this.Visible = false;
-
         }
 
         private void btn_Options_Click(object sender, EventArgs e)

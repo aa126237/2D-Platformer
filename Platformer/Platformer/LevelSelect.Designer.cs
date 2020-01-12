@@ -32,6 +32,7 @@
             this.btn_level2 = new System.Windows.Forms.Button();
             this.btn_level3 = new System.Windows.Forms.Button();
             this.btn_level4 = new System.Windows.Forms.Button();
+            this.btn_menu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_level1
@@ -94,6 +95,21 @@
             this.btn_level4.UseVisualStyleBackColor = false;
             this.btn_level4.Click += new System.EventHandler(this.btn_level4_Click);
             // 
+            // btn_menu
+            // 
+            this.btn_menu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_menu.BackgroundImage = global::Platformer.Properties.Resources.Grass;
+            this.btn_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_menu.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_menu.Location = new System.Drawing.Point(261, 31);
+            this.btn_menu.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_menu.Name = "btn_menu";
+            this.btn_menu.Size = new System.Drawing.Size(270, 55);
+            this.btn_menu.TabIndex = 13;
+            this.btn_menu.Text = "Menu";
+            this.btn_menu.UseVisualStyleBackColor = false;
+            this.btn_menu.Click += new System.EventHandler(this.btn_menu_Click);
+            // 
             // LevelSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +117,7 @@
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_menu);
             this.Controls.Add(this.btn_level4);
             this.Controls.Add(this.btn_level3);
             this.Controls.Add(this.btn_level2);
@@ -120,5 +137,6 @@
         private System.Windows.Forms.Button btn_level2;
         private System.Windows.Forms.Button btn_level3;
         private System.Windows.Forms.Button btn_level4;
+        private System.Windows.Forms.Button btn_menu;
     }
 }
