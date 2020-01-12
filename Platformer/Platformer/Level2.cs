@@ -114,6 +114,15 @@ namespace Platformer
             }
 
             gemLabel.Text = "Score: " + score;
+
+            if (score == 5)
+            {
+                tmr_movement.Stop();
+                MessageBox.Show("Congratulations you beat level 2!");
+                Level3 level3 = new Level3();
+                level3.Show();
+                this.Visible = false;
+            }
         }
     }
 }
