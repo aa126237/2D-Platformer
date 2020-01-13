@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
             this.pb_Ground = new System.Windows.Forms.PictureBox();
             this.pb_Player = new System.Windows.Forms.PictureBox();
             this.tmr_movement = new System.Windows.Forms.Timer(this.components);
@@ -211,6 +212,7 @@
             this.Controls.Add(this.pb_Player);
             this.Controls.Add(this.pb_Ground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Level1";

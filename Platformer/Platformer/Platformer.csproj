@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>new_piskel_gJ4_icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -180,6 +183,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cog-gear-monotone-settings-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="new_piskel_gJ4_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

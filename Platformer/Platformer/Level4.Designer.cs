@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level4));
             this.tmr_movement = new System.Windows.Forms.Timer(this.components);
             this.pb_Ground = new System.Windows.Forms.PictureBox();
             this.pb_platform2 = new System.Windows.Forms.PictureBox();
@@ -363,6 +364,7 @@
             this.Controls.Add(this.pb_platform2);
             this.Controls.Add(this.pb_Ground);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Level4";
