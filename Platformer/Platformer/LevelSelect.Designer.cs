@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LevelSelect));
             this.btn_level1 = new System.Windows.Forms.Button();
             this.btn_level2 = new System.Windows.Forms.Button();
             this.btn_level3 = new System.Windows.Forms.Button();
@@ -123,6 +124,7 @@
             this.Controls.Add(this.btn_level2);
             this.Controls.Add(this.btn_level1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LevelSelect";

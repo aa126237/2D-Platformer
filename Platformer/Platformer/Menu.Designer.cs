@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.btn_startGame = new System.Windows.Forms.Button();
             this.btn_Options = new System.Windows.Forms.Button();
             this.btn_exitGame = new System.Windows.Forms.Button();
@@ -90,6 +91,7 @@
             this.Controls.Add(this.btn_Options);
             this.Controls.Add(this.btn_startGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Menu";
