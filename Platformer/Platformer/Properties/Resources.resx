@@ -139,9 +139,6 @@
   <data name="PileOfGold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PileOfGold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Player" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RunningLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RunningLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,5 +150,8 @@
   </data>
   <data name="StandingRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\StandingRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cog_gear_monotone_settings_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cog-gear-monotone-settings-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
