@@ -90,7 +90,7 @@
             this.pb_platform1.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform1.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform1.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform1.Location = new System.Drawing.Point(565, 297);
+            this.pb_platform1.Location = new System.Drawing.Point(456, 297);
             this.pb_platform1.Name = "pb_platform1";
             this.pb_platform1.Size = new System.Drawing.Size(200, 30);
             this.pb_platform1.TabIndex = 23;
@@ -102,7 +102,7 @@
             this.pb_platform4.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform4.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform4.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform4.Location = new System.Drawing.Point(161, 158);
+            this.pb_platform4.Location = new System.Drawing.Point(983, 214);
             this.pb_platform4.Name = "pb_platform4";
             this.pb_platform4.Size = new System.Drawing.Size(200, 30);
             this.pb_platform4.TabIndex = 24;
@@ -114,7 +114,7 @@
             this.pb_platform3.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform3.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform3.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform3.Location = new System.Drawing.Point(485, 158);
+            this.pb_platform3.Location = new System.Drawing.Point(905, 50);
             this.pb_platform3.Name = "pb_platform3";
             this.pb_platform3.Size = new System.Drawing.Size(200, 30);
             this.pb_platform3.TabIndex = 25;
@@ -126,7 +126,7 @@
             this.pb_platform5.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform5.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform5.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform5.Location = new System.Drawing.Point(316, 62);
+            this.pb_platform5.Location = new System.Drawing.Point(629, 138);
             this.pb_platform5.Name = "pb_platform5";
             this.pb_platform5.Size = new System.Drawing.Size(200, 30);
             this.pb_platform5.TabIndex = 26;
@@ -144,7 +144,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Location = new System.Drawing.Point(658, 265);
+            this.pictureBox7.Location = new System.Drawing.Point(549, 265);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(18, 26);
             this.pictureBox7.TabIndex = 30;
@@ -156,7 +156,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(593, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(1013, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(18, 26);
             this.pictureBox1.TabIndex = 31;
@@ -168,7 +168,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(408, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(721, 106);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(18, 26);
             this.pictureBox2.TabIndex = 32;
@@ -180,7 +180,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(249, 126);
+            this.pictureBox3.Location = new System.Drawing.Point(1071, 182);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(18, 26);
             this.pictureBox3.TabIndex = 33;

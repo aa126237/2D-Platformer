@@ -45,6 +45,12 @@
             this.gemLabel = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pb_settings = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_platform2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,6 +65,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_settings)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // tmr_movement
@@ -84,7 +96,7 @@
             this.pb_platform2.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform2.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform2.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform2.Location = new System.Drawing.Point(102, 297);
+            this.pb_platform2.Location = new System.Drawing.Point(161, 243);
             this.pb_platform2.Name = "pb_platform2";
             this.pb_platform2.Size = new System.Drawing.Size(200, 30);
             this.pb_platform2.TabIndex = 21;
@@ -96,7 +108,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pictureBox1.Image = global::Platformer.Properties.Resources.Grass;
-            this.pictureBox1.Location = new System.Drawing.Point(565, 297);
+            this.pictureBox1.Location = new System.Drawing.Point(859, 375);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(200, 30);
             this.pictureBox1.TabIndex = 23;
@@ -120,7 +132,7 @@
             this.pb_platform3.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform3.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform3.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform3.Location = new System.Drawing.Point(485, 158);
+            this.pb_platform3.Location = new System.Drawing.Point(161, 44);
             this.pb_platform3.Name = "pb_platform3";
             this.pb_platform3.Size = new System.Drawing.Size(200, 30);
             this.pb_platform3.TabIndex = 25;
@@ -132,7 +144,7 @@
             this.pb_platform5.BackColor = System.Drawing.Color.Transparent;
             this.pb_platform5.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.pb_platform5.Image = global::Platformer.Properties.Resources.Grass;
-            this.pb_platform5.Location = new System.Drawing.Point(316, 62);
+            this.pb_platform5.Location = new System.Drawing.Point(859, 243);
             this.pb_platform5.Name = "pb_platform5";
             this.pb_platform5.Size = new System.Drawing.Size(200, 30);
             this.pb_platform5.TabIndex = 26;
@@ -155,7 +167,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Location = new System.Drawing.Point(405, 30);
+            this.pictureBox7.Location = new System.Drawing.Point(948, 211);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(18, 26);
             this.pictureBox7.TabIndex = 30;
@@ -167,7 +179,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(576, 126);
+            this.pictureBox2.Location = new System.Drawing.Point(343, 14);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(18, 26);
             this.pictureBox2.TabIndex = 31;
@@ -179,7 +191,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Location = new System.Drawing.Point(247, 126);
+            this.pictureBox3.Location = new System.Drawing.Point(343, 126);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(18, 26);
             this.pictureBox3.TabIndex = 32;
@@ -191,7 +203,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Location = new System.Drawing.Point(187, 265);
+            this.pictureBox4.Location = new System.Drawing.Point(343, 211);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(18, 26);
             this.pictureBox4.TabIndex = 33;
@@ -203,7 +215,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::Platformer.Properties.Resources.gem;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(656, 265);
+            this.pictureBox5.Location = new System.Drawing.Point(950, 343);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(18, 26);
             this.pictureBox5.TabIndex = 34;
@@ -250,6 +262,78 @@
             this.pb_settings.TabStop = false;
             this.pb_settings.Click += new System.EventHandler(this.pb_settings_Click);
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.BackgroundImage = global::Platformer.Properties.Resources.gem;
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox8.Location = new System.Drawing.Point(576, 211);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(18, 26);
+            this.pictureBox8.TabIndex = 39;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "gem";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox9.BackgroundImage = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox9.Image = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox9.Location = new System.Drawing.Point(485, 243);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(200, 30);
+            this.pictureBox9.TabIndex = 38;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "platform";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox10.BackgroundImage = global::Platformer.Properties.Resources.gem;
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox10.Location = new System.Drawing.Point(950, 126);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(18, 26);
+            this.pictureBox10.TabIndex = 41;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.Tag = "gem";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.BackgroundImage = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox11.Image = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox11.Location = new System.Drawing.Point(859, 158);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(200, 30);
+            this.pictureBox11.TabIndex = 40;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "platform";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox12.BackgroundImage = global::Platformer.Properties.Resources.gem;
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox12.Location = new System.Drawing.Point(948, 14);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(18, 26);
+            this.pictureBox12.TabIndex = 43;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "gem";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.BackgroundImage = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox13.Image = global::Platformer.Properties.Resources.Grass;
+            this.pictureBox13.Location = new System.Drawing.Point(859, 44);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(200, 30);
+            this.pictureBox13.TabIndex = 42;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "platform";
+            // 
             // Level4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +341,12 @@
             this.BackgroundImage = global::Platformer.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 461);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pb_settings);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.gemLabel);
@@ -294,6 +384,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_settings)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +413,11 @@
         private System.Windows.Forms.Label gemLabel;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pb_settings;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

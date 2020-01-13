@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btn_startGame = new System.Windows.Forms.Button();
-            this.btn_Options = new System.Windows.Forms.Button();
             this.btn_exitGame = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -39,7 +38,7 @@
             this.btn_startGame.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_startGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_startGame.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_startGame.Location = new System.Drawing.Point(485, 108);
+            this.btn_startGame.Location = new System.Drawing.Point(485, 132);
             this.btn_startGame.Margin = new System.Windows.Forms.Padding(0);
             this.btn_startGame.Name = "btn_startGame";
             this.btn_startGame.Size = new System.Drawing.Size(230, 53);
@@ -48,28 +47,13 @@
             this.btn_startGame.UseVisualStyleBackColor = false;
             this.btn_startGame.Click += new System.EventHandler(this.btn_startGame_Click);
             // 
-            // btn_Options
-            // 
-            this.btn_Options.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_Options.BackgroundImage = global::Platformer.Properties.Resources.Grass;
-            this.btn_Options.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Options.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Options.Location = new System.Drawing.Point(485, 171);
-            this.btn_Options.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_Options.Name = "btn_Options";
-            this.btn_Options.Size = new System.Drawing.Size(230, 53);
-            this.btn_Options.TabIndex = 9;
-            this.btn_Options.Text = "Options";
-            this.btn_Options.UseVisualStyleBackColor = false;
-            this.btn_Options.Click += new System.EventHandler(this.btn_Options_Click);
-            // 
             // btn_exitGame
             // 
             this.btn_exitGame.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_exitGame.BackgroundImage = global::Platformer.Properties.Resources.Grass;
             this.btn_exitGame.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_exitGame.Font = new System.Drawing.Font("Showcard Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exitGame.Location = new System.Drawing.Point(485, 230);
+            this.btn_exitGame.Location = new System.Drawing.Point(485, 185);
             this.btn_exitGame.Margin = new System.Windows.Forms.Padding(0);
             this.btn_exitGame.Name = "btn_exitGame";
             this.btn_exitGame.Size = new System.Drawing.Size(230, 53);
@@ -87,7 +71,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.btn_exitGame);
-            this.Controls.Add(this.btn_Options);
             this.Controls.Add(this.btn_startGame);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -102,7 +85,6 @@
 
         #endregion
         private System.Windows.Forms.Button btn_startGame;
-        private System.Windows.Forms.Button btn_Options;
         private System.Windows.Forms.Button btn_exitGame;
     }
 }
