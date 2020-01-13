@@ -20,7 +20,7 @@ namespace Platformer
         int playerJumpSpeed = 10;
         int force = 8;
         int gemsCollected = 0;
-        int gemsLeft = 5;
+        int gemsLeft = 8;
 
         public Level4()
         {
@@ -121,7 +121,7 @@ namespace Platformer
 
             gemLabel.Text = "Collect " + gemsLeft + " more gems";
 
-            if (gemsCollected == 5)
+            if (gemsCollected == 8)
             {
                 tmr_movement.Stop();
                 MessageBox.Show("Congratulations you beat the game!");

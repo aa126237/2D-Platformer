@@ -30,14 +30,9 @@ namespace Platformer
             this.Visible = false;
         }
 
-        private void btn_Options_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("Hi");
-        }
-
         private void btn_exitGame_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Hi");
+            Application.Exit();
         }
     }
 }
