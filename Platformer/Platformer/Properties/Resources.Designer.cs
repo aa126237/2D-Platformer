@@ -93,6 +93,16 @@ namespace Platformer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FinalGameTitle {
+            get {
+                object obj = ResourceManager.GetObject("FinalGameTitle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gem {
             get {
                 object obj = ResourceManager.GetObject("gem", resourceCulture);

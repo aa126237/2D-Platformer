@@ -186,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="new_piskel_gJ4_icon.ico" />
+    <None Include="Resources\FinalGameTitle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
